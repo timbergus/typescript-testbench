@@ -49,7 +49,7 @@ export class Hello extends Component<Props, State> {
     return(
       <Fragment>
         <h1>Hello from {compiler} and {framework}!</h1>
-        <button onClick={this.openModal}>Open Modal</button>
+        <button className="primary-button" onClick={this.openModal}>Open Modal</button>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={this.closeModal}

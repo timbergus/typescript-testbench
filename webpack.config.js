@@ -6,8 +6,7 @@ module.exports = {
   entry: resolve('src', 'index.tsx'),
   output: {
     path: resolve('dist'),
-    filename: '[name].js',
-    chunkFilename: '[chunkhash].js',
+    filename: '[name].[hash].js',
   },
   devtool: 'source-map',
   devServer: {
@@ -23,7 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [
           'babel-loader',
@@ -31,12 +30,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.js(x?)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
       {
-        test: /\.(s?)css$/,
+        test: /\.s?css$/,
         use: [
           'style-loader',
           'css-loader',
