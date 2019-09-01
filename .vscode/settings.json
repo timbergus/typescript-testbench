@@ -1,0 +1,13 @@
+{
+  "cSpell.words": [
+    "Chilanka",
+    "Interop",
+    "Testbench",
+    "chunkhash",
+    "devtool",
+    "esnext"
+  ],
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+}
